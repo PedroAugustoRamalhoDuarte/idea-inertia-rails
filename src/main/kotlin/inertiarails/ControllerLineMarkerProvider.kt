@@ -2,7 +2,7 @@ package inertiarails
 
 import com.intellij.codeInsight.daemon.LineMarkerInfo
 import com.intellij.codeInsight.daemon.LineMarkerProvider
-import com.intellij.icons.AllIcons.Ide.Link
+import com.intellij.icons.AllIcons.FileTypes.Any_type
 import com.intellij.openapi.editor.markup.GutterIconRenderer
 import com.intellij.codeInsight.daemon.GutterIconNavigationHandler
 import com.intellij.openapi.project.DumbService
@@ -22,7 +22,7 @@ class ControllerLineMarkerProvider : LineMarkerProvider, GutterIconNavigationHan
         LineMarkerInfo(
             element,
             element.textRange,
-            Link,
+            Any_type,
             { "Find usages of this page" },
             this,
             GutterIconRenderer.Alignment.CENTER,
